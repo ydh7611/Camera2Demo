@@ -472,10 +472,10 @@ public class Camera2Helper {
                     CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
 
             mPreviewRequestBuilder.addTarget(surface);
-            mPreviewRequestBuilder.addTarget(mImageReader.getSurface());
+            //mPreviewRequestBuilder.addTarget(mImageReader.getSurface()); //我的虚拟相机不需要此代码
 
             // Here, we create a CameraCaptureSession for camera preview.
-            mCameraDevice.createCaptureSession(Arrays.asList(surface, mImageReader.getSurface()),
+            mCameraDevice.createCaptureSession(Arrays.asList(surface, /* mImageReader.getSurface() */),//我的虚拟相机不需要此代码
                     mCaptureStateCallback, mBackgroundHandler
             );
         } catch (CameraAccessException e) {
