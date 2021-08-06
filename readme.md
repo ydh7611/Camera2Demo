@@ -28,3 +28,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-all.zip
