@@ -9,6 +9,11 @@
 
 
 修改以下内容，可解决导入时，包出错问题。
+compileSdkVersion 30
+
+targetSdkVersion 30
+由28改为30
+
 dependencies {
     def appcompat_version = "1.2.0"
 
